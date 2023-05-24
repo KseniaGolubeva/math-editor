@@ -1,0 +1,120 @@
+@import "./variables.scss";
+@import "./templates.scss";
+
+@mixin button($bg-color: $me-light, $color: $me-text-color-dark, $bg-color-hover: $me-light-hover, $is-me-item: false) {
+  font-size: $me-font-size;
+  font-style: $me-font-style;
+  color: $color;
+  background-color: $bg-color;
+  cursor: pointer;
+  border: 0;
+  @extend %transition;
+
+  @if($is-me-item) {
+    padding: $me-padding;
+  } @else {
+    padding: $me-padding-button;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+@mixin textarea($min-h) {
+  display: block;
+  resize: vertical;
+  font-size: $me-font-size;
+  line-height: $me-line-height;
+  box-sizing: border-box;
+  color: $me-text-color-dark;
+  min-height: $min-h;
+  height: 100%;
+  border: $me-border-size solid $me-border-color;
+  padding: $me-padding-item;
+  @extend %transition-textarea;
+
+  &:focus {
+    border-color: $me-info;
+    box-shadow: inset $me-box-shadow-length $me-info-shadow;
+    outline: none;
+  }
+}
+
+.me-item {
+  min-width: $me-item-min-w;
+  min-height: $me-item-min-h;
+  @include button($is-me-item: true);
+  &.open {
+    background-color: $me-light-hover;
+  }
+}
+
+.me-item-select-formula {
+  min-width: max-content;
+  min-height: max-content;
+  @include button($is-me-item: true);
+}
+
+.me-button {
+  @include button($me-light, $me-text-color-dark, $me-light-hover);
+}
+
+.me-button-secondary {
+  @include button($me-secondary, $me-text-color-light, $me-secondary-hover);
+}
+
+.me-button-primary {
+  @include button($me-primary, $me-text-color-light, $me-primary-hover);
+}
+
+.me-button-success {
+  @include button($me-success, $me-text-color-light, $me-success-hover);
+}
+
+.me-button-danger {
+  @include button($me-danger, $me-text-color-light, $me-danger-hover);
+}
+
+.me-button-img {
+  @include button(transparent, $me-text-color-dark, transparent, true);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.me-textarea {
+  @include textarea(150px);
+}
+
+.me-textarea-additional {
+  @include textarea(70px);
+}
+
+.me-formula-size-standard {
+  font-size: 18px;
+}
+
+.me-formula-size-small {
+  font-size: 16px;
+}
+
+.me-formula-size-big {
+  font-size: 22px;
+}
+
+.me-icon {
+  height: $me-icon-size;
+  width: $me-icon-size;
+}
+
+.me-icon-additional {
+  height: $me-icon-additional;
+  width: $me-icon-additional;
+}
+
+.me-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

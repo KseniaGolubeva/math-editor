@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+%transition {
+  transition: all $me-transition-duration $me-transition-function;
+}
+
+%transition-open {
+  transition: opacity $me-transition-duration $me-transition-function, visibility $me-transition-duration $me-transition-function
+}
+
+%transition-textarea {
+  transition: border-color $me-transition-duration $me-transition-function, box-shadow $me-transition-duration $me-transition-function
+}

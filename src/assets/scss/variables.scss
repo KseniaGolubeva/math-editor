@@ -1,0 +1,61 @@
+$me-white: #fff;
+
+$me-light: #eef0f1;
+$me-light-hover: #d3d4d5;
+
+$me-primary: #0d6efd;
+$me-primary-hover: #0d6efd;
+
+$me-secondary: #767676;
+$me-secondary-hover: #767676;
+
+$me-success: #22c55e;
+$me-success-hover: #22c55e;
+
+$me-danger: #dc3545;
+$me-danger-hover: #dc3545;
+
+$me-info: #86b7fe;
+$me-info-shadow: rgba(13, 110, 253, .25);
+
+$me-text-color-light: #fff;
+$me-text-color-dark: #000;
+
+$me-border-size: 1px;
+$me-border-radius: 5px;
+$me-border-color: #dee2e6;
+$me-box-shadow-length: 0 0 0 2px;
+$me-box-shadow-length-mini: 0 0 0 1px;
+
+$me-mask: rgba(0 ,0, 0, 0.2);
+
+$me-item-min-h: 55px;
+$me-item-min-w: 55px;
+
+$me-item-sign-min-h: 15px;
+$me-item-sign-min-w: 15px;
+
+$me-z-index-dropdown: 1;
+$me-z-index-popup: 2;
+$me-z-index-impotent: 3;
+
+$me-padding: 4px;
+$me-padding-item: $me-padding * 2;
+$me-padding-element: $me-padding * 3 $me-padding * 4;
+$me-padding-button: $me-padding * 2 $me-padding * 3;
+
+$me-margin: 4px;
+$me-margin-item: $me-margin * 2;
+$me-margin-element: $me-margin * 4;
+
+$me-line-height: inherit;
+$me-font-weight: inherit;
+$me-font-style: inherit;
+$me-font-size: 1rem;
+
+$me-transition-duration: 0.2s;
+$me-transition-function: ease-in-out;
+
+$me-icon-size: 27px;
+$me-icon-additional: 16px;
+$me-icon-delete: 14px;
